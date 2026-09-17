@@ -54,7 +54,7 @@ def fetch_seismica_data(source_id):
         api_key = None
 
     headers = {
-        "User-Agent": "SeismicaDashboard/1.0 (mailto:admin@example.com)"
+        "User-Agent": "TestingDashboard/1.0 (mailto:admin@example.com)"
     }
     
     if api_key:
@@ -99,7 +99,7 @@ def fetch_seismica_data(source_id):
 @st.cache_data(ttl=86400)
 def fetch_diamond_oa_trends(journal_dict, api_key=None):
     base_url = "https://api.openalex.org/works"
-    headers = {"User-Agent": "SeismicaDashboard/1.0 (mailto:admin@example.com)"}
+    headers = {"User-Agent": "TestingDashboard/1.0 (mailto:admin@example.com)"}
     if api_key:
         headers["Authorization"] = f"Bearer {api_key}"
 
