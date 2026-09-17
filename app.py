@@ -6,21 +6,21 @@ import plotly.graph_objects as go
 from datetime import datetime, timedelta
 
 # Set page config
-st.set_page_config(page_title="Seismica Journal Dashboard", layout="wide")
+st.set_page_config(page_title="Testing Dashboard", layout="wide")
 
 logo_col, title_col = st.columns([1, 12])
 
 with logo_col:
     # Display local logo file (or pass a direct image URL string)
-    st.image("images/seismica-logo-small.png", use_container_width=True)
+    st.image("images/uc_logo.png", use_container_width=True)
 
 with title_col:
     st.markdown(
-        "<h1 style='color: #123466; margin-top: 0; margin-bottom: 0; line-height: 1.1;'>Seismica Journal Dashboard</h1>", 
+        "<h1 style='color: #123466; margin-top: 0; margin-bottom: 0; line-height: 1.1;'>Testing Journal Dashboard</h1>", 
         unsafe_allow_html=True
     )
 st.markdown(
-    "<h2 style='margin-top: -10px; line-height: 1.1;'><a href='https://www.seismica.org' target='_blank' style='color: #64C28C; text-decoration: none;'>www.seismica.org</a></h2>", 
+    "<h2 style='margin-top: -10px; line-height: 1.1;'><a href='https://www.seismica.org' target='_blank' style='color: #64C28C; text-decoration: none;'>www.site.org</a></h2>", 
     unsafe_allow_html=True
 )
 
